@@ -1,0 +1,9 @@
+# Deployment Status Workflow
+
+This GitHub Actions workflow implements a comprehensive deployment tracking system for the Node.js project. It triggers on push events to the main branch and executes three sequential jobs:
+
+1. pre-deployment - Performs quality checks and creates a deployment tracking issue
+2. rollback-preparation - Creates comprehensive rollback artifacts and documentation
+3. post-deployment - Updates the deployment status and closes the tracking issue
+
+The workflow ensures that every deployment has a verified rollback plan in place before completion.
